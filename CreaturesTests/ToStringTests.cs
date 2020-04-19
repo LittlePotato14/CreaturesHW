@@ -16,8 +16,7 @@ namespace CreaturesTests
         public void To_string_test_fup()
         {
             var temp = new Creature("Mambara", MovementType.Flying, 2.9236458);
-            Assert.AreEqual(temp.ToString(),
-                "Flying creature Mambara: Health = 2,924");
+            Assert.AreEqual("Flying creature Mambara: Health = 2,924", temp.ToString());
         }
 
         /// <summary>
@@ -27,8 +26,7 @@ namespace CreaturesTests
         public void To_string_test_fdown()
         {
             var temp = new Creature("Mambara", MovementType.Flying, 3.454200595);
-            Assert.AreEqual(temp.ToString(),
-                "Flying creature Mambara: Health = 3,454");
+            Assert.AreEqual("Flying creature Mambara: Health = 3,454", temp.ToString());
         }
     }
 }

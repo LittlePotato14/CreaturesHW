@@ -17,8 +17,7 @@ namespace CreaturesTests
         {
             var temp1 = new Creature("Mambarala", MovementType.Flying, 2.9236458);
             var temp2 = new Creature("Barabar", MovementType.Flying, 2.9236458);
-            Assert.AreEqual((temp1 * temp2).Name,
-                "Mambabar");
+            Assert.AreEqual("Mambabar", (temp1 * temp2).Name);
         }
 
         /// <summary>
@@ -29,8 +28,7 @@ namespace CreaturesTests
         {
             var temp1 = new Creature("Mambar", MovementType.Flying, 2.9236458);
             var temp2 = new Creature("Barabara", MovementType.Flying, 2.9236458);
-            Assert.AreEqual((temp1 * temp2).Name,
-                "Barabar");
+            Assert.AreEqual("Barabar", (temp1 * temp2).Name);
         }
 
         /// <summary>
@@ -41,7 +39,7 @@ namespace CreaturesTests
         {
             var temp1 = new Creature("Mambar", MovementType.Flying, 3);
             var temp2 = new Creature("Barabara", MovementType.Flying, 8);
-            Assert.AreEqual((temp1 * temp2).Health, 5.5);
+            Assert.AreEqual(5.5, (temp1 * temp2).Health);
         }
     }
 }

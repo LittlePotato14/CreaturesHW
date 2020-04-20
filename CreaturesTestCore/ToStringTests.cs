@@ -18,7 +18,7 @@ namespace CreaturesTests
             var temp = new Creature("Mambara", MovementType.Flying, 2.9236458);
             string doub = System.Threading.Thread.CurrentThread.CurrentCulture.Name.Contains("ru") ?
                 "2,924" : "2.924";
-            Assert.AreEqual("Flying creature Mambara: Health = 2,924", temp.ToString());
+            Assert.AreEqual("Flying creature Mambara: Health = " + doub, temp.ToString());
         }
 
         /// <summary>

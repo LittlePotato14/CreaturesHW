@@ -16,6 +16,8 @@ namespace CreaturesTests
         public void To_string_test_fup()
         {
             var temp = new Creature("Mambara", MovementType.Flying, 2.9236458);
+            string doub = System.Threading.Thread.CurrentThread.CurrentCulture.Name.Contains("ru") ?
+                "2,924" : "2.924";
             Assert.AreEqual("Flying creature Mambara: Health = 2,924", temp.ToString());
         }
 
@@ -26,7 +28,9 @@ namespace CreaturesTests
         public void To_string_test_fdown()
         {
             var temp = new Creature("Mambara", MovementType.Flying, 3.454200595);
-            Assert.AreEqual("Flying creature Mambara: Health = 3,454", temp.ToString());
+            string doub = System.Threading.Thread.CurrentThread.CurrentCulture.Name.Contains("ru") ?
+                "3,454" : "3.454";
+            Assert.AreEqual("Flying creature Mambara: Health = " + doub, temp.ToString());
         }
     }
 }

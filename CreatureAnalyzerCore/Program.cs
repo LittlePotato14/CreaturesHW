@@ -1,10 +1,10 @@
-﻿using System;
+﻿using CreaturesLibrary;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Security;
-using CreaturesLibrary;
 
 namespace CreatureAnalyzer
 {
@@ -46,7 +46,7 @@ namespace CreatureAnalyzer
 
         static void Main()
         {
-            var creatures = ReadFromXml<Creature>(@"../../../creatures.xml");
+            var creatures = ReadFromXml<Creature>(@"../../../../creatures.xml");
 
             // Количество плавающих.
             Console.WriteLine("Количество плавающих: " +

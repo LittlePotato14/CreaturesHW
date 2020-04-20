@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CreaturesLibrary\CreaturesLibrary.csproj" />
+    <ProjectReference Include="..\CreaturesLibraryCore\CreaturesLibraryCore.csproj" />
   </ItemGroup>
 
 </Project>

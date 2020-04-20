@@ -81,7 +81,7 @@ namespace CreatureGenerator
             foreach (var creature in creatures)
                 Console.WriteLine(creature.ToString());
 
-            WriteToXml<Creature>(creatures, @"../../../creatures.xml");
+            WriteToXml<Creature>(creatures, @"../../../../creatures.xml");
         }
     }
 }

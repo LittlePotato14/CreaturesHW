@@ -23,15 +23,15 @@ namespace CreaturesTests
             writeSettings.Indent = true;
 
             var serXML = new System.Runtime.Serialization.DataContractSerializer(typeof(Creature));
-            using (var xmlWriter = XmlWriter.Create(@"../../../check.xml", writeSettings))
+            using (var xmlWriter = XmlWriter.Create(@"check.xml", writeSettings))
                 serXML.WriteObject(xmlWriter, before);
 
             Creature after;
-            using (var fs = new FileStream(@"../../../check.xml", FileMode.Open))
+            using (var fs = new FileStream(@"check.xml", FileMode.Open))
                 after = (Creature)serXML.ReadObject(fs);
 
             // Убираем мусор.
-            File.Delete(@"../../../check.xml");
+            File.Delete(@"check.xml");
 
             Assert.AreEqual(before, after);
         }

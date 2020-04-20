@@ -1,0 +1,9 @@
+language: csharp
+mono: none
+dotnet: 2.1.502
+solution: Creatures.sln
+script:
+  - dotnet test CreaturesTestCore/CreatureCreationTests.cs
+  - dotnet test CreaturesTestCore/MultiplyTests.cs
+  - dotnet test CreaturesTestCore/SerializationTests.cs
+  - dotnet test CreaturesTestCore/ToStringTests.cs

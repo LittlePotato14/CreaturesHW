@@ -93,19 +93,12 @@ namespace CreaturesLibrary
         /// <summary>
         /// Переопределено для тестов.
         /// </summary>
-        public bool Equals(Creature other)
-        {
-            return Name.Equals(other.Name) 
-                && Health.Equals(other.Health) 
-                && MovementType.Equals(other.MovementType);
-        }
-
-        /// <summary>
-        /// Переопределено для тестов.
-        /// </summary>
         public override bool Equals(object obj)
         {
-            return Equals(obj as Creature);
+            var other = obj as Creature;
+            return Name.Equals(other.Name)
+                && Health.Equals(other.Health)
+                && MovementType.Equals(other.MovementType);
         }
     }
 }

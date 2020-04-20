@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatureGenerator", "Creatu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatureAnalyzer", "CreatureAnalyzer\CreatureAnalyzer.csproj", "{F678823C-F315-4701-836D-142DEA66C574}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreaturesTests", "CreaturesTests\CreaturesTests.csproj", "{61E0F990-DC47-4182-9644-E0D5CC38C950}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreaturesTestCore", "CreaturesTestCore\CreaturesTestCore.csproj", "{BB8F9610-0614-4B72-9473-92CDB642BF14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{F678823C-F315-4701-836D-142DEA66C574}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F678823C-F315-4701-836D-142DEA66C574}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F678823C-F315-4701-836D-142DEA66C574}.Release|Any CPU.Build.0 = Release|Any CPU
-		{61E0F990-DC47-4182-9644-E0D5CC38C950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61E0F990-DC47-4182-9644-E0D5CC38C950}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61E0F990-DC47-4182-9644-E0D5CC38C950}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61E0F990-DC47-4182-9644-E0D5CC38C950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB8F9610-0614-4B72-9473-92CDB642BF14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8F9610-0614-4B72-9473-92CDB642BF14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8F9610-0614-4B72-9473-92CDB642BF14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8F9610-0614-4B72-9473-92CDB642BF14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
